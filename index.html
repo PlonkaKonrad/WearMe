@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+        <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    </head>
+    <body>
+        <div class="container">
+
+        <button class='dark-mode-button'><i class="fas fa-lightbulb"></i></i></button>
+        
+        <header>Wearly</header>
+        <p class="forWho">For Him</p>
+
+        <div class='menu'>
+            <h1>Menu</h1>
+            <button class='random-btn menu-button' onclick="random()"><h2>Random set</h2></button>
+
+            <form>
+                <p>Please select your gender:</p>
+                <input type="radio" id="radioMan" name="gender" value="Man" checked>
+                <label for="Man">Man</label><br>
+                <input type="radio" id="radioWoman" name="gender" value="Woman">
+                <label for="Woman">Woman</label><br>
+              
+                <br>  
+              
+                <p>Please select your style:</p>
+                <input type="radio" id="casual" name="style" value="Casual/" >
+                <label for="casual">Casual</label><br>
+                <input type="radio" id="smart" name="style" value="Smart/">
+                <label for="smart">Smart</label><br>  
+                <input type="radio" id="street" name="style" value="Street/" checked>
+                <label for="street">Street</label><br> 
+                <input type="radio" id="all" name="style" value="All/">
+                <label for="all">All</label><br> 
+              </form>
+
+
+            <button class='menu-button' onclick="CreatePDFfromHTML()"><h2>Save your style to .pdf</h2></button>
+        </div>
+
+
+
+        <div class="show-clothes">
+            
+            <div class="addition clothes-row">
+                <button class="arrowL arrow additionalL"><i class="fas fa-chevron-circle-left"></i></button>
+                <div class="content additionalContent"></div> 
+                <button class="arrowR arrow additionalR"><i class="fas fa-chevron-circle-right"></i></button> 
+            </div>
+            <div class="top clothes-row">
+                <button class="arrowL arrow topL"><i class="fas fa-chevron-circle-left"></i></button>
+                <div class="content topContent"></div> 
+                <button class="arrowR arrow topR"><i class="fas fa-chevron-circle-right"></i></button> 
+            </div>
+            <div class="pants clothes-row">
+                <button class="arrowL arrow pantsL"><i class="fas fa-chevron-circle-left"></i></button>
+                <div class="content pantsContent"></div> 
+                <button class="arrowR arrow pantsR"><i class="fas fa-chevron-circle-right"></i></button> 
+            </div>
+            <div class="shoes clothes-row">
+                <button class="arrowL arrow shoesL"><i class="fas fa-chevron-circle-left"></i></button>
+                <div class="content shoesContent"></div> 
+                <button class="arrowR arrow shoesR"><i class="fas fa-chevron-circle-right"></i></button> 
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="script.js"></script>
+       
+    </div>
+    </body>
+</html>

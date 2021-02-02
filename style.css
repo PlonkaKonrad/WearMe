@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  font-family: "Pacifico", cursive;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-image: url(images/old_moon.png);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: "Pacifico", cursive;
+  align-items: center;
+  transition: 2s;
+  background-color: #fff;
+}
+
+.container-dark {
+  background-image: url(images/ep_naturalblack.png);
+  color: white;
+}
+
+/*............................................................ styles for header*/
+header {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: block;
+  font-size: 60px;
+  width: 300px;
+  padding: 0px 100px;
+}
+
+.forWho {
+  position: absolute;
+  left: 55%;
+  top: 5%;
+  font-size: 30px;
+}
+
+/*............................................................ styles for dark mode*/
+.dark-mode-button {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  transition: 1s;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+.dark-mode:hover {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode-button-dark {
+  background-color: white;
+  color: black;
+}
+
+/*............................................................ styles for menu*/
+.menu {
+  position: absolute;
+  margin-left: 100px;
+  width: 200px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  top: 200px;
+}
+
+.menu h1 {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+label,
+p {
+  font-family: "Sriracha", cursive;
+}
+
+form {
+  border: 1px dashed black;
+  width: 100%;
+}
+
+.form-dark {
+  border: 1px dashed white;
+  transition: 0.5s;
+}
+
+.menu-button {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 60px;
+  border: 1px dashed black;
+  background-color: transparent;
+  font-size: 10px;
+  transition: 0.5s;
+  font-family: arial;
+}
+.menu-button-dark {
+  color: white;
+  border: 2px dotted white;
+}
+
+.menu-button:hover,
+on-focus {
+  background-color: rgb(226, 82, 30);
+}
+
+.style {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  font-size: 15px;
+  height: auto;
+}
+
+/*............................................................ styles for displaing clothes, arrows etc*/
+
+.show-clothes {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 0px;
+  padding: 20px;
+}
+/*.......................... Styles for clothes pictures */
+.clothes-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.clothes-row button {
+  background-color: transparent;
+  border: none;
+}
+
+.clothes-row button:hover > i {
+  transform: scale(1.5);
+}
+
+.content {
+  width: 400px;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+
+.content:hover {
+  transform: scale(1.2);
+}
+
+.addition {
+  width: 100%;
+  height: 100px;
+}
+
+.top {
+  width: 100%;
+  height: 200px;
+}
+.pants {
+  width: 100%;
+  height: 200px;
+}
+.shoes {
+  width: 100%;
+  height: 100px;
+}
+
+/*.......................... Styles for arrows */
+.arrow {
+  font-size: 40px;
+}
+
+.arrow i {
+  transition: 0.3s;
+}
+
+.arrowL {
+  display: flex;
+  width: 100px;
+  height: 100%;
+  color: orangered;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrowR {
+  display: flex;
+  width: 100px;
+  height: 100%;
+  color: orangered;
+  justify-content: center;
+  align-items: center;
+}
+/*............................................................ Media queriess*/
+@media (max-width: 1800px) {
+  header {
+    font-size: 40px;
+  }
+}
